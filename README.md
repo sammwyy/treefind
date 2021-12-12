@@ -12,10 +12,10 @@ yarn add treefind
 
 ## How to use
 ```javascript
-# Import library.
+// Import library.
 const Treefind = require("treefind");
 
-# Instantiate with an object.
+// Instantiate with an object.
 const tree = new Treefind({
     name: "sammwy",
     age: 20,
@@ -27,22 +27,25 @@ const tree = new Treefind({
     }
 });
 
-# Get an specific prop
+// Get an specific prop
 console.log(tree.find("name")); 
-// { 
-//    "name": "sammwy"
-// }
+// returns:
+{
+  "name": "sammwy"
+}
 
-# Get a nested prop
+// Get a nested prop
 console.log(tree.find("skills.python"));
-// { 
-//    "skills.python": "low"
-// }
+// returns:
+{ 
+  "skills.python": "low"
+}
 
-# Get all nested prop if key starts with "java"
+// Get all nested prop if key starts with "java"
 console.log(tree.find("skills.java*")); 
-// { 
-//    "skills.javascript": "good", 
-//    "skills.java": "normal"
-// }
+// returns:
+{
+  "skills.javascript": "good", 
+  "skills.java": "normal"
+}
 ```
