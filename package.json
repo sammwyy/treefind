@@ -1,0 +1,31 @@
+{
+	"name": "treefind",
+	"version": "1.0.0",
+	"description": "Find specific nested props inside objects.",
+	"license": "MIT",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/sammwyy/treefind"
+    },
+	"funding": "https://paypal.me/sammwy",
+	"author": {
+		"name": "Sammwy",
+		"email": "sammwy.dev@gmail.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"deepfind",
+		"find",
+		"deep",
+		"object",
+		"tree",
+		"prop"
+	]
+}
