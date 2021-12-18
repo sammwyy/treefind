@@ -47,21 +47,21 @@ const tree = new Treefind({
     }
 });
 
-// Get an specific prop
+// Get an specific prop.
 console.log(tree.find("name")); 
 // returns:
 {
   "name": "sammwy"
 }
 
-// Get a nested prop
+// Get a nested prop.
 console.log(tree.find("skills.python"));
 // returns:
 { 
   "skills.python": "low"
 }
 
-// Get all nested props
+// Get all nested props.
 console.log(tree.find("skills.*"));
 // returns:
 { 
@@ -70,7 +70,7 @@ console.log(tree.find("skills.*"));
   "skills.python": "low"
 }
 
-// Get all nested prop if key starts with "java"
+// Get all nested prop if key starts with "java".
 console.log(tree.find("skills.java*")); 
 // returns:
 {
@@ -78,7 +78,7 @@ console.log(tree.find("skills.java*"));
   "skills.java": "normal"
 }
 
-// Get all nested prop if key ends with "e"
+// Get all nested prop if key ends with "e".
 console.log(tree.find("*e")); 
 // returns:
 {
